@@ -1,0 +1,256 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    color: #1D232C;
+}
+nav{
+    padding: 20px;
+    box-shadow: rgb(204, 219, 232)3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5)-3px -3px 6px 1px inset;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+   
+}
+.logo i{
+    font-size: xx-large;
+}
+.flinelogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlinks{
+    display: flex;
+    column-gap: 20px;
+}
+.navlinks a{
+    text-decoration: none;
+    cursor: pointer;
+    color:#1D232C ;
+}
+.navlinks a:hover{
+    text-decoration: underline;
+}
+.slinelogo ul{
+    display: flex;
+    color: grey;
+    margin-left: 40px;
+    gap: 25px;
+}
+.navbarmobile{
+    display: none;
+}
+.sidenavbar{
+    background-color: #1D232C;
+    color: #FFFFFF;
+    height: 100%;
+    width: 30%;
+    top: 0%;
+    left: -70%;
+    position: fixed;
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 22px;
+    transition: 2s;
+    z-index: 7;
+}
+
+.sidenavlogo{
+    text-align: end;
+    padding-bottom: 10px;
+}
+.snblink{
+    color: #FFFFFF;
+    padding: 10px;
+    padding-bottom: 25px;
+    
+}
+.sidenavlinks a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidenavlinks a:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+.bgimg img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.headertitle {
+    width: 600px;
+    position: absolute;
+    left: 80px;
+    top: 25%;
+    color: #FFFFFF;
+}
+.titleformobileview{
+    display: none;
+   width: 250px;
+   margin-top: 100px;
+   margin-left: -40px;
+   font-size:18px;
+   line-height: 1.2;
+}
+.headertitle h3{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    
+}
+.headerbtn button{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #5457FD;
+    color: #1D232C;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 180px;
+    top: 60%;
+}
+.headerbtn button a{
+    color: #1D232C;
+    text-decoration: none;
+    padding-right: 3px;
+}
+
+.cards img{
+    height: 300px;
+    width: 300px;
+    border: #1D232C 2px solid;
+    border-radius: 10px;
+}
+
+.bodybtn1{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #5457FD;
+    color: #1D232C;
+    border-radius: 10px;
+    border: none;
+   position: relative;
+   left: 60px;
+   top: -160px;
+}
+
+.cards a{
+    text-decoration: none;
+    color: #1D232C;
+}
+
+.cards{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 80px;
+    
+   
+}
+
+.cardimg{
+    flex-basis: 30%;
+    flex-wrap: wrap;
+    
+}
+
+.body h2{
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.footer{
+    background-color: #1D232C;
+    color: #FFFFFF;
+    padding: 25px;
+    padding-left: 35px;
+    margin-top: 30px;
+}
+
+
+               /* mobile l (normal) */
+   @media screen and (max-width:500px){
+        .navbarmobile{
+        display: block;
+    }
+    .navlinks{
+        display: none;
+    }
+    .headertitle h3{
+        display: none;
+    }
+    .headertitle h1{
+        width: 300px;
+        position: absolute;
+        left: -45px;
+        top: -10%;
+    }
+    .headerbtn button{
+        position: absolute;
+        left: 60px;
+        top: 53%;
+  }
+  .bgimg img{
+    height: 55%;
+  }
+  .titleformobileview{
+    display: block;
+  }
+  .body{
+    margin-left: -50px;
+  }
+  .body h2{
+    margin-left: 60px;
+  }
+
+
+
+
+
+}
+
+                /* mobile s */
+
+@media screen and (max-width:330px) {
+    .headertitle h1{
+        position: absolute;
+        left: -50px;
+        top: -27%;
+    }
+     .cards{
+        margin-left: -10px;
+     }
+ 
+}
+
+               /* laptop */
+@media screen and (max-width:1025px) {
+    .body{
+        margin-left: -70px;
+    }
+}
+
+
+                /* 4k */
+@media screen and (min-width:2560px){
+   .bodybtn1{
+    position: relative;
+    left: -33%;
+    top: -50%;
+   }
+   .cards{
+    padding-left: 300px;
+   }
+}
