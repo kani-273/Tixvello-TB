@@ -226,11 +226,15 @@ nav{
 @media screen and (max-width:330px) {
     .headertitle h1{
         position: absolute;
-        left: -50px;
-        top: -27%;
+        left: -60px;
+        top: -10%;
     }
      .cards{
         margin-left: -10px;
+     }
+    .headerbtn button{
+        position: relative;
+        top: -100px;
      }
  
 }
@@ -247,10 +251,38 @@ nav{
 @media screen and (min-width:2560px){
    .bodybtn1{
     position: relative;
-    left: -33%;
+    left: -35%;
     top: -50%;
    }
    .cards{
     padding-left: 300px;
    }
+      .headerbtn button{
+    position: relative;
+    top: -250px;
+  }
+  .header{
+    font-size: 30px;
+  }
+  .footer{
+    font-size: 30px;
+  }
+  .body{
+    font-size: 30px;
+  }
+  nav{
+    font-size: 30px;
+  }
+  .slinelogo ul{
+    display: flex;
+    gap: 35px;
+}
+}
+             /* laptop l */
+@media screen and (min-width:1440px) {
+    .headerbtn{
+        position: relative;
+        top: -300px;
+    }
+    
 }
